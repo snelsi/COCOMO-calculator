@@ -1,0 +1,188 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.85);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.4em;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  background: rgba(0, 0, 15, 0.06);
+  border-radius: 4px;
+  color: #222;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-weight: 600;
+  margin: 0.2em;
+  letter-spacing: 0.01em;
+  padding: 0.2em 0.5em;
+  white-space: pre;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-block-start: 1.2em;
+  margin-block-end: 0.8em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h1 {
+  font-size: 6em;
+  line-height: 1.2em;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 3.75em;
+  line-height: 1.2em;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 3em;
+  line-height: 1.3em;
+}
+
+h4 {
+  font-size: 2.125em;
+  line-height: 1.3em;
+}
+
+h5 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  margin-block-start: 1.4em;
+  margin-block-end: 0.8em;
+}
+
+h6 {
+  font-size: 1.25em;
+  line-height: 1.2em;
+}
+
+.body1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.body2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+
+.subtitle1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.subtitle2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.caption {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+}
+
+.overline {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+b {
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+  margin: 1.3em 0;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 520px) {
+  p {
+    font-size: 16px;
+    line-height: 1.4em;
+  }
+}
+
+i {
+  color: #000;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+}
+
+@media (min-width: 420px) {
+  i {
+    white-space: nowrap;
+  }
+}
+
+li {
+  margin: 0.8em 0;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+hr {
+  background: #e8e8e8;
+  border: none;
+  height: 1px;
+  margin: 24px 0;
+}
