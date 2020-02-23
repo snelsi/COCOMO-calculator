@@ -46,13 +46,13 @@ export const About: React.FC = () => {
         <li>
           <b>Трудоемкость</b> <i>(человеко-месяцев)</i> –{" "}
           <code>
-            a<sub>b</sub> × KLoC × b<sup>b</sup>
+            a<sub>b</sub> × KLoC<sup> b<sub>b</sub></sup>
           </code>
         </li>
         <li>
           <b>Срок разработки</b> <i>(месяцев)</i> –{" "}
           <code>
-            c<sub>b</sub> × Трудоемкость × d<sup>b</sup>
+            c<sub>b</sub> × Трудоемкость<sup> d<sub>b</sub></sup>
           </code>
         </li>
         <li>
