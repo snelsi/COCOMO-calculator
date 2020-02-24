@@ -5,24 +5,24 @@ import { RadioGroup } from "components";
 import useMediaQuery from "react-use-media-query-hook";
 
 const InitialValue: ratingFactor = {
-  reliability: 1,
-  sizeOfDatabase: 2,
-  Complexity: 1,
+  reliability: 3,
+  sizeOfDatabase: 3,
+  Complexity: 3,
 
   performanceConstraints: 3,
   memoryConstraints: 3,
-  environmentVolatility: 2,
-  turnaboutTime: 2,
+  environmentVolatility: 3,
+  turnaboutTime: 3,
 
-  analystCapability: 1,
-  applicationsExperience: 1,
-  programmerCapability: 1,
-  virtualMachineExperience: 1,
-  languageExperience: 1,
+  analystCapability: 3,
+  applicationsExperience: 3,
+  programmerCapability: 3,
+  virtualMachineExperience: 3,
+  languageExperience: 3,
 
-  applicationMethods: 1,
-  softwareTools: 1,
-  requiredSchedule: 1
+  applicationMethods: 3,
+  softwareTools: 3,
+  requiredSchedule: 3
 };
 
 const driversKeys = [
