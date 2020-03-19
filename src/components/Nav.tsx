@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Icon } from "antd";
+import { Menu } from "antd";
+import { CalculatorOutlined, QuestionCircleOutlined } from "@ant-design/icons";
 
 export const Nav = () => {
   const { pathname } = useLocation();
@@ -14,13 +15,13 @@ export const Nav = () => {
     >
       <Item key="/">
         <Link to="/">
-          <Icon type="question-circle" />
+          <QuestionCircleOutlined />
           About
         </Link>
       </Item>
       <Item key="/calc">
         <Link to="/calc">
-          <Icon type="calculator" />
+          <CalculatorOutlined />
           COCOMO
         </Link>
       </Item>
