@@ -22,7 +22,7 @@ const InitialValue: ratingFactor = {
 
   applicationMethods: 3,
   softwareTools: 3,
-  requiredSchedule: 3
+  requiredSchedule: 3,
 };
 
 const driversKeys = [
@@ -38,12 +38,12 @@ const driversKeys = [
   { key: "programmerCapability", text: "Опыт разработки" },
   {
     key: "virtualMachineExperience",
-    text: "Опыт использования виртуальных машин"
+    text: "Опыт использования виртуальных машин",
   },
   { key: "languageExperience", text: "Опыт языка" },
   { key: "applicationMethods", text: "Инструменты разработки" },
   { key: "softwareTools", text: "Методы разработки" },
-  { key: "requiredSchedule", text: "График разработки" }
+  { key: "requiredSchedule", text: "График разработки" },
 ];
 
 interface IntermediateCocomoProps {
@@ -52,7 +52,7 @@ interface IntermediateCocomoProps {
 }
 export const IntermediateCocomo: React.FC<IntermediateCocomoProps> = ({
   team,
-  KLoC
+  KLoC,
 }) => {
   const [drivers, setDrivers] = useState(InitialValue);
   const isMobile = useMediaQuery("(max-width: 400px)");
@@ -63,7 +63,7 @@ export const IntermediateCocomo: React.FC<IntermediateCocomoProps> = ({
   const res = useMemo(() => calculateIntermediateCocomo(team, KLoC, drivers), [
     drivers,
     team,
-    KLoC
+    KLoC,
   ]);
 
   return (
@@ -151,10 +151,6 @@ const Columns = styled.div`
 
   @media (min-width: 920px) {
     padding-left: 120px;
-  }
-
-  @media (max-width: 400px) {
-    /* display: none; */
   }
 
   & div {
