@@ -6,14 +6,14 @@ import { IntermediateCocomo, CoefficientTable, Result } from "cocomo";
 const { Panel } = Collapse;
 const { Option } = Select;
 
+type Team = "organic" | "semidetach" | "embedded";
 export const Cocomo = () => {
   document.title = "Калькулятор COCOMO";
 
-  const [team, setTeam] = useState<"organic" | "semidetach" | "embedded">(
-    "organic"
-  );
+  const [team, setTeam] = useState<Team>("organic");
   const [KLoC, setKLoC] = useState(0);
-  const handleSelect = newValue => setTeam(newValue);
+  const handleSelect = (newValue: Team) => setTeam(newValue);
+
   return (
     <Wrapper>
       <InputContainer>
@@ -35,7 +35,7 @@ export const Cocomo = () => {
           и нам нужно написать
           <InputNumber
             value={KLoC}
-            onChange={setKLoC}
+            onChange={(num) => setKLoC(Number(num))}
             style={{ margin: "12px", width: "140px" }}
             size="large"
           />
